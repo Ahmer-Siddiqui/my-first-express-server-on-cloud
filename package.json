@@ -1,7 +1,7 @@
 {
-  "name": "1.-hello-world-server",
+  "name": "hello-server",
   "version": "1.0.0",
-  "description": "dfsfsdfsdf",
+  "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.mjs"
