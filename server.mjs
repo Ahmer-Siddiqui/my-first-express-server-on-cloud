@@ -2,7 +2,7 @@ import path from 'path';
 import express from 'express'
 // const express = require('express') // old so reuired not allow
 const app = express()
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5001;
 
 app.get('/abc', (req, res) => {
   console.log("request ip:" , req.ip);
@@ -19,7 +19,7 @@ app.get('/gettime', (req, res) => {
 
 const __dirname = path.resolve();
 app.use('/', express.static(path.join(__dirname ,'./web/build')))
-app.use('*', express.static(path.join(__dirname ,'./web/build')))
+app.use('/*', express.static(path.join(__dirname ,'./web/build')))
 
 
 app.listen(port, () => {
